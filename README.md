@@ -1,5 +1,5 @@
 # Java-DB-H2-API-Spring
-Aplicacao Java usando Spring Boot com database H2, API, usnado classes: Controllers, Entities, Repositories, DTO, Services
+Aplicacao Java usando Spring Boot com database H2, API, usando classes: Controllers, Entities, Repositories, DTO, Services
 <p>Adiciona dois objetos na tabela</p>
 <p>Embora os objetos possuam o atributo "senha" esta não retornada no DTO que é exibido como Json</p>
 
