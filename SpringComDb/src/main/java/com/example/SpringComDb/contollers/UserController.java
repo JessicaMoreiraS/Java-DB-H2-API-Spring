@@ -36,7 +36,6 @@ public class UserController {
 	public Page<UserDTO> findAllPag(Pageable pageable){
 		List<UserDTO> result = service.findAll();
 		Page<UserDTO> page = new PageImpl<>(result, pageable, result.size());
-		System.out.println(page);
 		return page;
 	}
 }
