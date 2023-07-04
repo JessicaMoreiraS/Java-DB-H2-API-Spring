@@ -3,6 +3,25 @@ Aplicacao Java usando Spring Boot com database H2, API, usando classes: Controll
 <p>Adiciona dois objetos na tabela</p>
 <p>Embora os objetos possuam o atributo "senha" esta não retornada no DTO que é exibido como Json</p>
 
-<img src="https://github.com/JessicaMoreiraS/Java-DB-H2-API-Spring/assets/100448388/66e490ab-97a2-4eac-a618-cbbe809424c3" width="50%">
-<img src="https://github.com/JessicaMoreiraS/Java-DB-H2-API-Spring/assets/100448388/8d133c0c-289d-4544-a9dc-2415438d6f7c" width="50%">
-<img src="https://github.com/JessicaMoreiraS/Java-DB-H2-API-Spring/assets/100448388/32be4098-90ee-4104-b8b2-fe2425d341b4" width="50%">
+<div align="center">
+  <h3>Retorna uma lista com todos os usuários</h3>
+  <img src="https://github.com/JessicaMoreiraS/Java-DB-H2-API-Spring/assets/100448388/021232e9-a5e0-47b6-8f3e-cfc40d3aecfa" width="45%">
+</div>
+    
+<div align="center">
+  <h3>Retorna os usuários como Página</h3>
+  <p>podendo especificar o tamanho de páginas ou qual a página a ser exibida</p>
+  <img src="https://github.com/JessicaMoreiraS/Java-DB-H2-API-Spring/assets/100448388/e8f50f66-2060-4be8-abb5-e137e82e1c53" width="45%">
+</div>
+
+<div align="center">
+  <h3>Retorna os usuários selecionados por salário como Página</h3>
+  <p>podendo especificar o valor mínimo e/ou o máximo do salário</p>
+  <img src="https://github.com/JessicaMoreiraS/Java-DB-H2-API-Spring/assets/100448388/41ca844e-7526-4c4b-b2b8-a09d6b549445" width="45%">
+</div>
+
+<div align="center">
+  <h3>Retorna os usuários selecionados por nome como Página</h3>
+  <p>podendo especificar o nome como filtro</p>
+  <img src="https://github.com/JessicaMoreiraS/Java-DB-H2-API-Spring/assets/100448388/003eecdb-96e1-495c-b360-8553bc8d916f" width="45%">
+</div>
