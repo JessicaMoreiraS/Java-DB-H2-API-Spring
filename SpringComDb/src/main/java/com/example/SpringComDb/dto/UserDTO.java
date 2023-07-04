@@ -1,10 +1,12 @@
 /*Objeto de trafegar dados do Usuario*/
 package com.example.SpringComDb.dto;
 
-import com.example.SpringComDb.entities.User;
-
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.data.domain.Page;
+
+import com.example.SpringComDb.entities.User;
 
 public class UserDTO {
 
@@ -40,6 +42,14 @@ public class UserDTO {
 		}
 		return usuariosDTO;
 	}
+	
+	
+	public List<UserDTO> UserDTOConvertToDTO (Page<User> userSalary){
+		List<User> usuarios = userSalary.getContent();
+		List<UserDTO> result = UserDTOAll(usuarios);
+		return result;
+	}
+	
 
 	public Long getId() {
 		return id;
