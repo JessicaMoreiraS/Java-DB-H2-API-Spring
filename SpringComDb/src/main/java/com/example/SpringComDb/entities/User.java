@@ -9,7 +9,7 @@ import jakarta.persistence.Table;
 @Entity
 
 /*Para dar o nome da tabela*/
-@Table(name="tb_user")
+@Table(name="tb_users")
 public class User {
 	
 	@Id
@@ -17,15 +17,19 @@ public class User {
 	private Long id;
 	private String name;
 	private String password;
+	private String email;
+	private Double salary;
 	
 	public User() {
 	}
 
-	public User(Long id, String name, String password) {
+	public User(Long id, String name, String password, String email, Double salary) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.password = password;
+		this.email = email;
+		this.salary = salary;
 	}
 
 	public Long getId() {
@@ -45,5 +49,17 @@ public class User {
 	}
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public Double getSalary() {
+		return salary;
+	}
+	public void setSalary(Double salary) {
+		this.salary = salary;
 	}
 }
