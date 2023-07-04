@@ -4,6 +4,10 @@ Aplicacao Java usando Spring Boot com database H2, API, usando classes: Controll
 <p>Embora os objetos possuam o atributo "senha" esta não retornada no DTO que é exibido como Json</p>
 
 <div align="center">
+  <img src="https://github.com/JessicaMoreiraS/Java-DB-H2-API-Spring/assets/100448388/4901f87b-7b50-478d-9a20-11113d1fe62d" width="45%">
+</div>
+
+<div align="center">
   <h3>Retorna uma lista com todos os usuários</h3>
   <img src="https://github.com/JessicaMoreiraS/Java-DB-H2-API-Spring/assets/100448388/021232e9-a5e0-47b6-8f3e-cfc40d3aecfa" width="45%">
 </div>
