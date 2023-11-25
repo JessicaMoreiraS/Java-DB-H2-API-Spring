@@ -1,14 +1,17 @@
-# Use uma imagem base do OpenJDK para Java 11
-FROM openjdk:11-jre-slim
+# Base image with Java
+FROM openjdk:11-jdk-slim
 
-# Diretório de trabalho dentro do contêiner
-WORKDIR /app
+# Add a volume pointing to /tmp (optional)
+VOLUME /tmp
 
-# Copie o JAR construído para o contêiner (substitua 'nome-do-seu-arquivo.jar' pelo nome real do seu arquivo JAR)
-COPY target/nome-do-seu-arquivo.jar app.jar
-
-# Exponha a porta em que a aplicação Spring Boot será executada
+# Make port 8080 available to the outside world
 EXPOSE 8080
 
-# Comando para executar a aplicação quando o contêiner for iniciado
-CMD ["java", "-jar", "app.jar"]
+# The application's JAR file
+ARG JAR_FILE=target/my-app-0.0.1-SNAPSHOT.jar
+
+# Add the application's JAR file to the container
+ADD ${JAR_FILE} app.jar
+
+# Run the app when the container starts
+ENTRYPOINT ["java","-jar","/app.jar"]
